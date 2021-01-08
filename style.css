@@ -5,13 +5,15 @@ body, html {
   color: White;
 }
 
-.cd-logo {
+.cd-logo, .kitchen-equipment, .cake-ingredients {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #642580;
   background-size: cover;
   min-height: 100%;
+
+  background-attachment: fixed;   
 }
 
 .cd-logo {
@@ -19,6 +21,21 @@ body, html {
   min-height: 100%;
   background-size: auto;
 }
+ 
+.kitchen-equipment {
+  background-image: url("utensils.JPG");
+}
+ 
+.cake-ingredients {
+  background-image: url("ingredients.JPG");
+}
+
+.cd-logo {
+  background-image: url("CoderDojo.png");
+  min-height: 100%;
+  background-size: auto;
+}
+
 
 h3 {
   letter-spacing: 5px;
@@ -31,4 +48,34 @@ h3 {
 .textSection {
   background-color:#642580;
   padding:50px 80px;
+}
+
+ .kitchen-equipment {
+    background-image: url("utensils.JPG");
+}
+
+  .cake-ingredients {
+    background-image: url("ingredients.jpg");
+}
+
+ .caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+} 
+
+ .border {
+  background-color: #41BAC1;
+  color: White;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+/* Turn off parallax scrolling for tablets and phones as it is not supported */
+@media only screen and (max-device-width: 1024px) {
+    .cd-logo, .layer-cake, .kitchen-equipment, .cake-ingredients, .bowl-of-cakemix, .cake-in-oven, .decorated-cake {
+        background-attachment: scroll;
+    }
 }
